@@ -29,4 +29,10 @@ class Participante: NSObject, NSCoding {
     func encode(with aCoder: NSCoder) {
         aCoder.encode(name, forKey: PropertyKeys.name)
     }
+    
+    var participantes: [Participante] = []
+    
+    
+    
+    
 }

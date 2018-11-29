@@ -17,6 +17,8 @@
 		A2B88F2721ABBCFB00464AC5 /* Participante.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B88F2621ABBCFB00464AC5 /* Participante.swift */; };
 		A2B88F2921ABC52900464AC5 /* ParticipanteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B88F2821ABC52900464AC5 /* ParticipanteTableViewCell.swift */; };
 		A2B88F2B21ABCA5500464AC5 /* ParticipanteFormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B88F2A21ABCA5500464AC5 /* ParticipanteFormTableViewController.swift */; };
+		A2FF8E4A21AFA752005147C2 /* NoDebeDarAListaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FF8E4921AFA752005147C2 /* NoDebeDarAListaTableViewController.swift */; };
+		A2FF8E4C21AFBA15005147C2 /* Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FF8E4B21AFBA15005147C2 /* Calculations.swift */; };
 		FF5E71D121AC178B008DB077 /* DebeDarATableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E71D021AC178B008DB077 /* DebeDarATableViewController.swift */; };
 		FF5E71D321AC1796008DB077 /* NoDebeDarATableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E71D221AC1796008DB077 /* NoDebeDarATableViewController.swift */; };
 		FF5E71D521AD847A008DB077 /* ParticipanteNotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E71D421AD847A008DB077 /* ParticipanteNotTableViewCell.swift */; };
@@ -57,6 +59,8 @@
 		A2B88F2621ABBCFB00464AC5 /* Participante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participante.swift; sourceTree = "<group>"; };
 		A2B88F2821ABC52900464AC5 /* ParticipanteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipanteTableViewCell.swift; sourceTree = "<group>"; };
 		A2B88F2A21ABCA5500464AC5 /* ParticipanteFormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipanteFormTableViewController.swift; sourceTree = "<group>"; };
+		A2FF8E4921AFA752005147C2 /* NoDebeDarAListaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDebeDarAListaTableViewController.swift; sourceTree = "<group>"; };
+		A2FF8E4B21AFBA15005147C2 /* Calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculations.swift; sourceTree = "<group>"; };
 		FF5E71D021AC178B008DB077 /* DebeDarATableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebeDarATableViewController.swift; sourceTree = "<group>"; };
 		FF5E71D221AC1796008DB077 /* NoDebeDarATableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDebeDarATableViewController.swift; sourceTree = "<group>"; };
 		FF5E71D421AD847A008DB077 /* ParticipanteNotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipanteNotTableViewCell.swift; sourceTree = "<group>"; };
@@ -115,9 +119,11 @@
 				A2B88EF821A7D11F00464AC5 /* Main.storyboard */,
 				A2B88F2A21ABCA5500464AC5 /* ParticipanteFormTableViewController.swift */,
 				A2B88F2221A7D41400464AC5 /* ListNamesTableViewController.swift */,
-				FF5E71D221AC1796008DB077 /* NoDebeDarATableViewController.swift */,
 				FF5E71D021AC178B008DB077 /* DebeDarATableViewController.swift */,
+				FF5E71D221AC1796008DB077 /* NoDebeDarATableViewController.swift */,
+				A2FF8E4921AFA752005147C2 /* NoDebeDarAListaTableViewController.swift */,
 				A2B88F2621ABBCFB00464AC5 /* Participante.swift */,
+				A2FF8E4B21AFBA15005147C2 /* Calculations.swift */,
 				A2B88F2821ABC52900464AC5 /* ParticipanteTableViewCell.swift */,
 				FF5E71D421AD847A008DB077 /* ParticipanteNotTableViewCell.swift */,
 				FF5E71D621AD8607008DB077 /* ParticipanteDebeTableViewCell.swift */,
@@ -282,7 +288,9 @@
 				FF5E71D721AD8607008DB077 /* ParticipanteDebeTableViewCell.swift in Sources */,
 				A2B88F2321A7D41400464AC5 /* ListNamesTableViewController.swift in Sources */,
 				A2B88F2921ABC52900464AC5 /* ParticipanteTableViewCell.swift in Sources */,
+				A2FF8E4C21AFBA15005147C2 /* Calculations.swift in Sources */,
 				FF5E71D121AC178B008DB077 /* DebeDarATableViewController.swift in Sources */,
+				A2FF8E4A21AFA752005147C2 /* NoDebeDarAListaTableViewController.swift in Sources */,
 				A2B88EF521A7D11F00464AC5 /* AppDelegate.swift in Sources */,
 				A2B88F2721ABBCFB00464AC5 /* Participante.swift in Sources */,
 				FF5E71D321AC1796008DB077 /* NoDebeDarATableViewController.swift in Sources */,

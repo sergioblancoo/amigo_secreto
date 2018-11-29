@@ -63,6 +63,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Next" id="VIy-j8-RVP">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
+                                <action selector="nextButton:" destination="z2k-ft-Ipq" id="cQY-Df-Wf9"/>
                                 <segue destination="c7h-F1-ZCA" kind="show" id="aCc-xl-1Yx"/>
                             </connections>
                         </barButtonItem>
@@ -214,10 +215,10 @@
             </objects>
             <point key="canvasLocation" x="1384.8" y="1367.7661169415294"/>
         </scene>
-        <!--Table View Controller-->
+        <!--No Debe DarA Lista Table View Controller-->
         <scene sceneID="fmc-GC-3Uh">
             <objects>
-                <tableViewController id="hxY-BR-cPQ" sceneMemberID="viewController">
+                <tableViewController id="hxY-BR-cPQ" customClass="NoDebeDarAListaTableViewController" customModule="Amigo_Secreto" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FDp-5h-pmT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

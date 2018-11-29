@@ -15,6 +15,8 @@ class NoDebeDarATableViewController: UITableViewController {
     }
     
     var participantes: [Participante] = []
+    var calculations = Calculations()
+    //var tempDictionary: [String:[Participante]] = [:]
     
     var participanteArchiveURL: URL {
         let participantesURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
@@ -25,7 +27,10 @@ class NoDebeDarATableViewController: UITableViewController {
         super.viewDidLoad()
         
         loadParticipantesFromFileNOT()
+        
     }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
