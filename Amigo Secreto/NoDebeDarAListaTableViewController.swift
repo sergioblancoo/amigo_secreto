@@ -14,18 +14,15 @@ class NoDebeDarAListaTableViewController: UITableViewController {
     var calculations = Calculations()
     
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         
         calculations.conbinacionDict()
-        let temp = calculations.tempDictionary
+        //let temp = calculations.tempDictionary
         
-        print("YEAHHHHHHH \(temp)")
+        print("YEAHHHHHHH \(calculations.tempDictionary.count)")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,8 +31,18 @@ class NoDebeDarAListaTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //return calculations.tempDictionary.count
         return 0
     }
+    
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "participantesCellNot", for: indexPath) as! ParticipanteNotTableViewCell
+//        
+//        let participante = participantes[indexPath.row]
+//        cell.update(with: participante)
+//        
+//        return cell
+//    }
     
 //    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        return

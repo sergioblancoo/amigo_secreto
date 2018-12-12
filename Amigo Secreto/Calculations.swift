@@ -22,29 +22,21 @@ struct Calculations {
         for i in 0..<participantes.count {
             //let temp: String = participantes[i].name
             tempDictionary[participantes[i].name] = participantes.filter{ $0 != participantes[i]}
+            print(" ****> \(String(describing: tempDictionary.keys))")
+            
+            for j in 0..<tempDictionary[participantes[i].name]!.count
+            {
+                //participantDictionary[]
+                
+                print(" ---->  \(String(describing: tempDictionary[participantes[i].name]![j].name))")
+            }
+            
             //temp.filter{ $0 != participantes[i].name}
         }
-        let temp = tempDictionary[participantes[0].name]![0].name
-        let temp1 = tempDictionary[participantes[0].name]![1].name
-        let temp2 = tempDictionary[participantes[0].name]![2].name
-        print("\(temp), \(temp1), \(temp2)")
         
-        let temp3 = tempDictionary[participantes[1].name]![0].name
-        let temp4 = tempDictionary[participantes[1].name]![1].name
-        let temp5 = tempDictionary[participantes[1].name]![2].name
-        print("\(temp3), \(temp4), \(temp5)")
-        
-        let temp6 = tempDictionary[participantes[2].name]![0].name
-        let temp7 = tempDictionary[participantes[2].name]![1].name
-        let temp8 = tempDictionary[participantes[2].name]![2].name
-        print("\(temp6), \(temp7), \(temp8)")
-        
-        let temp9 = tempDictionary[participantes[3].name]![0].name
-        let temp10 = tempDictionary[participantes[3].name]![1].name
-        let temp11 = tempDictionary[participantes[3].name]![2].name
-        print("\(temp9), \(temp10), \(temp11)")
-        
-        
+//        for i in tempDictionary.count {
+//            print(i)
+//        }
     }
     
     var participanteArchiveURL: URL {
