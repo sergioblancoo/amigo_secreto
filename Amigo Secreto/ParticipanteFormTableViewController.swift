@@ -17,9 +17,10 @@ class ParticipanteFormTableViewController: UITableViewController {
     var participante: Participante?
     
     @IBOutlet weak var nameTextField: UITextField!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameTextField.becomeFirstResponder()
         updateView()
     }
     

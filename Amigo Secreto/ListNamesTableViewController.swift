@@ -23,10 +23,13 @@ class ListNamesTableViewController: UITableViewController {
         return documentsURL.appendingPathComponent("participantes")
     }
     
+    @IBOutlet weak var nextButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         loadParticipantesFromFile()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,6 +59,12 @@ class ListNamesTableViewController: UITableViewController {
     
     func saveParticipantesToFile() {
         NSKeyedArchiver.archiveRootObject(participantes, toFile: participanteArchiveURL.path)
+        
+        if participantes.count < 3 {
+            nextButton.isEnabled = false
+        } else {
+            nextButton.isEnabled = true
+        }
     }
     
     func loadParticipantesFromFile() {
