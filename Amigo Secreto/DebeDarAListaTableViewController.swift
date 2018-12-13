@@ -1,28 +1,22 @@
 //
-//  NoDebeDarAListaTableViewController.swift
+//  DebeDarAListaTableViewController.swift
 //  Amigo Secreto
 //
-//  Created by Sergio Blanco on 29/11/18.
+//  Created by Sergio Blanco on 13/12/18.
 //  Copyright © 2018 Sergio Blanco. All rights reserved.
 //
 
 import UIKit
 
-class NoDebeDarAListaTableViewController: UITableViewController {
-
-    var participantes: [Participante] = []
+class DebeDarAListaTableViewController: UITableViewController {
+   
     var calculations = Calculations()
     var participantSelected:String!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        calculations.conbinacionDict()
-        //let temp = calculations.tempDictionary
-        
-        print("COMBINATIONS \(calculations.participantDictionary)")
-        print("Rellenar con: \(String(describing: calculations.participantDictionary[participantSelected]!))")
+        calculations.conbinacionDict()        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,9 +29,10 @@ class NoDebeDarAListaTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ParticipanteNoDebe", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ParticipanteDebe", for: indexPath)
         cell.textLabel?.text = calculations.participantDictionary[participantSelected]![indexPath.item]
         return cell
     }
-
+    
 }
+

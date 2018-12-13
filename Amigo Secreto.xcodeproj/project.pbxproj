@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A229053221C222A000385D38 /* DebeDarAListaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229053121C222A000385D38 /* DebeDarAListaTableViewController.swift */; };
 		A2B88EF521A7D11F00464AC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B88EF421A7D11F00464AC5 /* AppDelegate.swift */; };
 		A2B88EFA21A7D11F00464AC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B88EF821A7D11F00464AC5 /* Main.storyboard */; };
 		A2B88EFC21A7D12200464AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B88EFB21A7D12200464AC5 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A229053121C222A000385D38 /* DebeDarAListaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebeDarAListaTableViewController.swift; sourceTree = "<group>"; };
 		A2B88EF121A7D11F00464AC5 /* Amigo Secreto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amigo Secreto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B88EF421A7D11F00464AC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2B88EF921A7D11F00464AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				A2B88F2A21ABCA5500464AC5 /* ParticipanteFormTableViewController.swift */,
 				A2B88F2221A7D41400464AC5 /* ListNamesTableViewController.swift */,
 				FF5E71D021AC178B008DB077 /* DebeDarATableViewController.swift */,
+				A229053121C222A000385D38 /* DebeDarAListaTableViewController.swift */,
 				FF5E71D221AC1796008DB077 /* NoDebeDarATableViewController.swift */,
 				A2FF8E4921AFA752005147C2 /* NoDebeDarAListaTableViewController.swift */,
 				A2B88F2621ABBCFB00464AC5 /* Participante.swift */,
@@ -288,6 +291,7 @@
 				FF5E71D721AD8607008DB077 /* ParticipanteDebeTableViewCell.swift in Sources */,
 				A2B88F2321A7D41400464AC5 /* ListNamesTableViewController.swift in Sources */,
 				A2B88F2921ABC52900464AC5 /* ParticipanteTableViewCell.swift in Sources */,
+				A229053221C222A000385D38 /* DebeDarAListaTableViewController.swift in Sources */,
 				A2FF8E4C21AFBA15005147C2 /* Calculations.swift in Sources */,
 				FF5E71D121AC178B008DB077 /* DebeDarATableViewController.swift in Sources */,
 				A2FF8E4A21AFA752005147C2 /* NoDebeDarAListaTableViewController.swift in Sources */,

@@ -16,7 +16,7 @@ class NoDebeDarATableViewController: UITableViewController {
     
     var participantes: [Participante] = []
     var calculations = Calculations()
-    //var tempDictionary: [String:[Participante]] = [:]
+    //var myTitle:String!
     
     var participanteArchiveURL: URL {
         let participantesURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
@@ -29,8 +29,6 @@ class NoDebeDarATableViewController: UITableViewController {
         loadParticipantesFromFileNOT()
         
     }
-    
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -48,6 +46,18 @@ class NoDebeDarATableViewController: UITableViewController {
         cell.update(with: participante)
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+                
+        if (segue.identifier == "participantToNot") {
+            let rowClicked = (self.tableView.indexPathForSelectedRow?.row)!
+            let myTitle = participantes[rowClicked].name
+            segue.destination.navigationItem.title = myTitle + " no para:"
+            
+            let nextViewController = segue.destination as! NoDebeDarAListaTableViewController
+            nextViewController.participantSelected = myTitle
+        }
     }
     
     func loadParticipantesFromFileNOT() {

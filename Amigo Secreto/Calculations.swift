@@ -12,25 +12,33 @@ struct Calculations {
     
     var participantes: [Participante] = []
     var tempDictionary: [String:[Participante]] = [:]
+    var participantDictionary: [String:[String]] = [:]
+    
     
     mutating func conbinacionDict() {
         
         loadParticipantesFromFileDebe()
         
-        print("COOOOOOOOUUUUUNNNNNNTTTTTTT: \(participantes.count)")
+        //print("COOOOOOOOUUUUUNNNNNNTTTTTTT: \(participantes.count)")
         
         for i in 0..<participantes.count {
+            var userCombinations: [String] = []
             //let temp: String = participantes[i].name
             tempDictionary[participantes[i].name] = participantes.filter{ $0 != participantes[i]}
-            print(" ****> \(String(describing: tempDictionary.keys))")
+            //print(" ####> \(participantes[i].name)")
+            //print(" ****> \(String(describing: tempDictionary.keys))")
             
             for j in 0..<tempDictionary[participantes[i].name]!.count
             {
                 //participantDictionary[]
                 
-                print(" ---->  \(String(describing: tempDictionary[participantes[i].name]![j].name))")
+                
+                userCombinations.append(tempDictionary[participantes[i].name]![j].name)
+                
+                //print(" ---->  \(userCombinations)")
             }
-            
+            participantDictionary[participantes[i].name] = userCombinations
+            //print(" ====> \(participantDictionary)")
             //temp.filter{ $0 != participantes[i].name}
         }
         
