@@ -50,6 +50,7 @@ class ListNamesTableViewController: UITableViewController {
         if editingStyle == .delete {
             participantes.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
+            saveParticipantesToFile()
         }
     }
     

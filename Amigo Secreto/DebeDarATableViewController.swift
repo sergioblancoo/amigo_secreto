@@ -45,6 +45,18 @@ class DebeDarATableViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if (segue.identifier == "participantTo") {
+            let rowClicked = (self.tableView.indexPathForSelectedRow?.row)!
+            let myTitle = participantes[rowClicked].name
+            segue.destination.navigationItem.title = myTitle + " para:"
+            
+            let nextViewController = segue.destination as! DebeDarAListaTableViewController
+            nextViewController.participantSelected = myTitle
+        }
+    }
+    
     func loadParticipantesFromFileDebe() {
         guard let participantes = NSKeyedUnarchiver.unarchiveObject(withFile: participanteArchiveURL.path) as? [Participante] else {return}
         self.participantes = participantes
